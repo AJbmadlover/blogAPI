@@ -1,7 +1,7 @@
 // src/controllers/blogController.js
 
 const Blog = require('../models/Blog');
-const User = require('../models/User');
+const User = require('../models/user');
 const { calculateReadingTime } = require('../utils/readingTime');
 
 // CREATE BLOG
