@@ -49,7 +49,7 @@ Other Tools: dotenv, bcryptjs, morgan
 
 Clone the repository:
 
-git clone https://github.com/yourusername/blog-api.git
+git clone https://github.com/AJbmadlover/blogAPI.git
 cd blog-api
 
 
@@ -72,8 +72,8 @@ npm run dev   # for development with nodemon
 npm start     # for production
 
 5. API Endpoints
-Auth
 
+Auth
 POST /api/auth/signup → Sign up
 
 POST /api/auth/login → Log in
@@ -86,13 +86,13 @@ GET /api/blogs/:id → Get single blog (increments read_count)
 
 POST /api/blogs → Create a blog (draft by default)
 
-PUT /api/blogs/:id → Update blog (owner only)
+PUT /api/blogs/:id → Update blog (blog owner only)
 
-DELETE /api/blogs/:id → Delete blog (owner only)
+DELETE /api/blogs/:id → Delete blog (blog owner only)
 
-PATCH /api/blogs/:id/publish → Publish blog (owner only)
+PATCH /api/blogs/:id/publish → Publish blog (blog owner only)
 
-GET /api/blogs/user → Get list of logged-in user's blogs
+GET /api/blogs/user → Gets list of logged-in user's blogs
 
 6. Testing
 
@@ -107,11 +107,11 @@ Tests are written using Jest and Supertest for API endpoints.
 src/
 ├── config/
 ├── controllers/
-├── middleware/
+├── middlewares/
 ├── models/
 ├── routes/
-├── utils/
 ├── tests/
+├── utils/
 ├── app.js
 └── server.js
 
